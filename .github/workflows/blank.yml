@@ -9,7 +9,7 @@ jobs:
       steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: sudo apt-get update && wget -O java17.deb https://download.bell-sw.com/java/8u342+7/bellsoft-jre8u342+7-linux-amd64-full.deb && sudo apt-get install ./java17.deb -y && sudo update-java-alternatives --set /usr/lib/jvm/bellsoft-java17-runtime-amd64 && java -version
+        run: sudo apt-get update && wget -O java17.deb "https://download.bell-sw.com/java/8u342+7/bellsoft-jre8u342+7-linux-amd64-full.deb" >> /dev/null && sudo apt-get install ./java17.deb -y && sudo update-java-alternatives --set /usr/lib/jvm/bellsoft-java17-runtime-amd64 && java -version
         #"${{ github.event.client_payload.long }}"
       env:
         LINK: ${{secrets.LINK}}
