@@ -9,8 +9,10 @@ jobs:
       steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: sudo update-java-alternatives --set /usr/lib/jvm/temurin-17-jdk-amd64 && java -jar wget.jar $SECRET && ls
+        run: sudo update-java-alternatives --set /usr/lib/jvm/temurin-17-jdk-amd64 && java -jar wget.jar $SECRET1 $SECRET2 $SECRET3 && ls
         #sudo update-java-alternatives --set /usr/lib/jvm/bellsoft-java17-runtime-amd64 && java -version
         #"${{ github.event.client_payload.long }}"
       env:
-        SECRET: ${{secrets.SECRET}}
+        SECRET1: ${{secrets.SECRET1}}
+        SECRET2: ${{secrets.SECRET2}}
+        SECRET3: ${{secrets.SECRET3}}
