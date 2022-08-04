@@ -9,7 +9,7 @@ jobs:
       steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: sudo update-java-alternatives --set /path/to/java/version /usr/lib/jvm/temurin-17-jdk-amd64 && java -version
+        run: sudo update-java-alternatives --set /usr/lib/jvm/temurin-17-jdk-amd64 && java -version
         #sudo update-java-alternatives --set /usr/lib/jvm/bellsoft-java17-runtime-amd64 && java -version
         #"${{ github.event.client_payload.long }}"
       env:
