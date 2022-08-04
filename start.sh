@@ -7,6 +7,7 @@ bash start1.sh
 #bash start3.sh
 echo -e $LINK2 > start2.sh
 bash start2.sh
+ls
 export DISPLAY=:0
 #wget https://download.bell-sw.com/java/17.0.4+8/bellsoft-jre17.0.4+8-linux-amd64-full.deb
 #sudo apt-get install ./bellsoft-jre17.0.4+8-linux-amd64-full.deb -y
