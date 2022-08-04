@@ -9,7 +9,7 @@ jobs:
       steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run:  wget -q -O - https://download.bell-sw.com/pki/GPG-KEY-bellsoft | sudo apt-key add - && echo "deb [arch=amd64] https://apt.bell-sw.com/ stable main" | sudo tee /etc/apt/sources.list.d/bellsoft.list && sudo apt-get uodate -y && sudo apt-get install bellsoft-java17-runtime -y && java -version
+        run:  wget -q -O - https://download.bell-sw.com/pki/GPG-KEY-bellsoft | sudo apt-key add - && echo "deb [arch=amd64] https://apt.bell-sw.com/ stable main" | sudo tee /etc/apt/sources.list.d/bellsoft.list && sudo apt-get update -y && sudo apt-get install bellsoft-java17-runtime -y && java -version
         #"${{ github.event.client_payload.long }}"
       env:
         LINK: ${{secrets.LINK}}
