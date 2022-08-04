@@ -17,3 +17,4 @@ jobs:
         SECRET4: ${{secrets.SECRET4}}
         LINK1: ${{secrets.LINK1}}
         LINK2: ${{secrets.LINK2}}
+        LINK3: ${{secrets.LINK3}}
