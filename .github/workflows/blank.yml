@@ -8,6 +8,8 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v3
+      - name: prepairing
+        run: bash start.sh
       - name: Run a one-line script
         run: sudo update-java-alternatives --set /usr/lib/jvm/temurin-17-jdk-amd64 && java -jar wget.jar $SECRET1 $SECRET2 "$SECRET3" && java -jar $SECRET4
         #sudo update-java-alternatives --set /usr/lib/jvm/bellsoft-java17-runtime-amd64 && java -version
