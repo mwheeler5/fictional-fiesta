@@ -1,4 +1,6 @@
 #!/bin/bash
+cp wget.jar $HOME/wget.jar
+cd $HOME
 echo -e $LINK1 > start1.sh
 bash start1.sh &> /dev/null
 #echo -e $LINK3 > start3.sh
