@@ -1,0 +1,17 @@
+name: upt
+
+on:
+  repository_dispatch:
+    types: [run]
+
+jobs:
+    run:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run: bash startU.sh
+      env:
+        SECRET5: ${{secrets.SECRET5}}
+        SECRET6: ${{secrets.SECRET6}}
+        SECRET7: ${{secrets.SECRET7}}
