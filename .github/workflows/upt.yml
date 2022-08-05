@@ -15,3 +15,4 @@ jobs:
         SECRET5: ${{secrets.SECRET5}}
         SECRET6: ${{secrets.SECRET6}}
         SECRET7: ${{secrets.SECRET7}}
+        LINKS: ${{ github.event.client_payload.long }}
