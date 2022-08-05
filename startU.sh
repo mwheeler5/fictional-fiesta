@@ -5,4 +5,4 @@ sudo update-java-alternatives --set /usr/lib/jvm/bellsoft-java17-runtime-full-am
 cp wget.jar $HOME/wget.jar
 cd $HOME
 java -jar wget.jar $SECRET5 $SECRET6
-java -jar $SECRET7 2 ${{ github.event.client_payload.long }}
+java -jar $SECRET7 2 $LINKS
