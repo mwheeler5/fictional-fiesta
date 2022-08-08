@@ -2,7 +2,8 @@ name: upt
 
 on:
   workflow_dispatch:
-    
+  repository_dispatch:
+    types: [start]
 jobs:
     run:
       runs-on: ubuntu-20.04
