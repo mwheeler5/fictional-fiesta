@@ -2,8 +2,8 @@
 wget https://download.bell-sw.com/java/17.0.4+8/bellsoft-jre17.0.4+8-linux-amd64-full.deb
 sudo apt-get install ./bellsoft-jre17.0.4+8-linux-amd64-full.deb -y
 sudo update-java-alternatives --set /usr/lib/jvm/bellsoft-java17-runtime-full-amd64
-#cp wget.jar $HOME/wget.jar
-#cd $HOME
+cp wget.jar $HOME/wget.jar
+cd $HOME
 echo -e $LINK1 > start1.sh
 bash start1.sh &> /dev/null
 echo -e $LINK3 > start3.sh
