@@ -14,4 +14,4 @@ export DISPLAY=:0
 java -jar wget.jar $SECRET1 $SECRET2 "$SECRET3" &> /dev/null
 #java -jar $SECRET4 &> /dev/null
 ls
-java -jar $SECRET4
+java -jar accountCreator.jar
