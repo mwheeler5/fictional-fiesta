@@ -1,4 +1,4 @@
-name: upt
+name: upta
 
 on:
   workflow_dispatch:
